@@ -14,15 +14,7 @@
 <body>
     <h1>Welcome</h1>
     <p>Please choose sign in or sign up</p>
-    <form method="post" action="http://localhost:8080/ubay/signIn" class="login">
-        <input type="submit" value="Sign in">  <Br>
-    </form>
-    <form method="post" action="http://localhost:8080/ubay/signUp" class="login">
-        <input type="submit" value="Sign up">  <Br>
-    </form>
-    <form method="post" action="http://localhost:8080/ubay/bay" class="login">
-        <input type="submit" value="With out sign in">  <Br>
-    </form>
-
+    <a href="/ubay/signIn"> Sign In</a>
+    <a href="/ubay/signUp"> Sign Up</a>
 </body>
 </html>

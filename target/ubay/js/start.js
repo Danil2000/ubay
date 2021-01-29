@@ -1,6 +1,0 @@
-function signIN() {
-
-}
-function signUp() {
-
-}

@@ -5,34 +5,13 @@
          version="4.0">
 
     <servlet>
-        <servlet-name>default</servlet-name>
-        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
-        <init-param>
-            <param-name>debug</param-name>
-            <param-value>0</param-value>
-        </init-param>
-        <init-param>
-            <param-name>listings</param-name>
-            <param-value>true</param-value>
-        </init-param>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
+        <multipart-config />
     </servlet>
-
-<!--    <servlet>-->
-<!--        <servlet-name>start</servlet-name>-->
-<!--        <servlet-class>world.ucode.Start</servlet-class>-->
-<!--    </servlet>-->
-<!--&lt;!&ndash;    <servlet>&ndash;&gt;-->
-<!--&lt;!&ndash;        <servlet-name>signIn</servlet-name>&ndash;&gt;-->
-<!--&lt;!&ndash;        <servlet-class>world.ucode.SignIn</servlet-class>&ndash;&gt;-->
-<!--&lt;!&ndash;    </servlet>&ndash;&gt;-->
-<!--&lt;!&ndash;    <servlet-mapping>&ndash;&gt;-->
-<!--&lt;!&ndash;        <servlet-name>signIn</servlet-name>&ndash;&gt;-->
-<!--&lt;!&ndash;        <url-pattern>/signIn</url-pattern>&ndash;&gt;-->
-<!--&lt;!&ndash;    </servlet-mapping>&ndash;&gt;-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>start</servlet-name>-->
-<!--        <url-pattern>/ubay</url-pattern>-->
-<!--    </servlet-mapping>-->
-
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
 </web-app>

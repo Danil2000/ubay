@@ -1,7 +1,0 @@
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:30:46 +0200] "GET /ubay/start HTTP/1.1" 200 467 http-bio-8080-exec-1 637
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:30:46 +0200] "GET /js/start.js HTTP/1.1" 404 - http-bio-8080-exec-3 0
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:30:51 +0200] "POST /ubay/signUp HTTP/1.1" 200 - http-bio-8080-exec-4 0
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:32:12 +0200] "GET /ubay/signUp HTTP/1.1" 200 91 http-bio-8080-exec-6 38
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:32:12 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-8 0
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:40:22 +0200] "POST /ubay/signUp HTTP/1.1" 200 - http-bio-8080-exec-10 0
-0:0:0:0:0:0:0:1 - - [07/Jan/2021:22:40:24 +0200] "POST /ubay/signUp HTTP/1.1" 200 - http-bio-8080-exec-10 0
