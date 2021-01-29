@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ubay:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ubay</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ubay.war">
+      <element id="artifact" artifact-name="ubay:war exploded" />
+    </root>
+  </artifact>
+</component>

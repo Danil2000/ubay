@@ -1,21 +1,17 @@
 package world.ucode;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import javax.servlet.ServletException;
-import javax.servlet.annotation.MultipartConfig;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import org.springframework.web.context.request.WebRequest;
+import world.ucode.Model.UserDto;
 
 @Controller
 public class SignIn {
     @RequestMapping(value = "/signIn", method = RequestMethod.GET)
-    String signin() {
+    public String signin(WebRequest request, Model model, UserDto user) {
+        System.out.println(user.getLogin());
         return "/signIn";
     }
 }

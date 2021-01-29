@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [29/Jan/2021:22:34:28 +0200] "GET /ubay/start HTTP/1.1" 200 259 http-bio-8080-exec-1 317
-0:0:0:0:0:0:0:1 - - [29/Jan/2021:22:34:28 +0200] "GET /js/start.js HTTP/1.1" 404 - http-bio-8080-exec-3 0
-0:0:0:0:0:0:0:1 - - [29/Jan/2021:22:34:30 +0200] "GET /ubay/signUp HTTP/1.1" 200 75 http-bio-8080-exec-4 31
