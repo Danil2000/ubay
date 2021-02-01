@@ -24,8 +24,6 @@
            step="1" min="100" max="50000" value="100" size="5" required/>
     <label for="loginSignUp">Username</label>
     <input id="loginSignUp" class="form-styling" type="text" name="login" required autofocus/>
-    <label for="email">Email</label>
-    <input id="email" class="form-styling" type="email" name="email" required/>
     <label for="passwordSignUp">Password</label>
     <div>
         <input id="passwordSignUp" class="form-styling" type="password" name="password" autocomplete="on" required/>

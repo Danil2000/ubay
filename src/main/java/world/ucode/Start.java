@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class Start {
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String start() {
+    public String getPage() {
         return "/start";
     }
 }

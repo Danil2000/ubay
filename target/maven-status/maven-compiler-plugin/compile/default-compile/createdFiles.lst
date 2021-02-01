@@ -1,4 +1,6 @@
 world/ucode/Model/UserDto.class
 world/ucode/SignUp.class
 world/ucode/SignIn.class
+world/ucode/CRUD/UserDAO.class
+world/ucode/Model/NewUserDTO.class
 world/ucode/Start.class
