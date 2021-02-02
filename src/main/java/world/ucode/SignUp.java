@@ -20,6 +20,7 @@ public class SignUp extends HttpServlet {
     @RequestMapping(value = "/signUp", method = RequestMethod.POST)
     public void signUp(@NotNull NewUserDTO user) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
         UserDAO userDAO = new UserDAO();
+        userDAO.getConnection();
         userDAO.create(user.getLogin(), user.getPassword(), user.getBalance(), user.getUserRole());
     }
 
