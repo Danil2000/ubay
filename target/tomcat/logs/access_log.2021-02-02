@@ -1,1 +1,3 @@
-0:0:0:0:0:0:0:1 - - [02/Feb/2021:22:11:11 +0200] "POST /ubay/signUp HTTP/1.1" 200 1638 http-bio-8080-exec-1 575
+0:0:0:0:0:0:0:1 - - [02/Feb/2021:22:48:57 +0200] "POST /ubay/signUp HTTP/1.1" 200 72 http-bio-8080-exec-1 872
+0:0:0:0:0:0:0:1 - - [02/Feb/2021:22:48:59 +0200] "GET /ubay/signUp HTTP/1.1" 200 1315 http-bio-8080-exec-3 35
+0:0:0:0:0:0:0:1 - - [02/Feb/2021:22:49:02 +0200] "GET /ubay/signUp HTTP/1.1" 200 1315 http-bio-8080-exec-4 1

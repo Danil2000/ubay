@@ -29,12 +29,6 @@
         <input id="passwordSignUp" class="form-styling" type="password" name="password" autocomplete="on" required/>
         <span toggle="#passwordSignUp" class="fa fa-fw fa-eye field-icon toggle-password"></span>
     </div>
-    <div>
-        <label for="confirmpassword">Confirm password</label>
-        <input id="confirmpassword" class="form-styling" type="password" name="confirmpassword" required
-               autocomplete="on" />
-        <span toggle="#confirmpassword" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-    </div>
     <input class="btn-signup" type="submit" onclick="checkPasswordMatch()" value="Sign up">
 </form>
 </body>

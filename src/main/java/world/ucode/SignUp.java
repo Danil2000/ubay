@@ -18,10 +18,15 @@ public class SignUp extends HttpServlet {
         return "/signUp";
     }
     @RequestMapping(value = "/signUp", method = RequestMethod.POST)
-    public void signUp(@NotNull NewUserDTO user) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
+    public String signUp(@NotNull NewUserDTO user) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, SQLException {
         UserDAO userDAO = new UserDAO();
         userDAO.getConnection();
-        userDAO.create(user.getLogin(), user.getPassword(), user.getBalance(), user.getUserRole());
+        if (userDAO.create(user.getLogin(), user.getPassword(), user.getBalance(), user.getUserRole())) {
+            return "/mainPage";
+        }
+        else {
+            return "/signIn";
+        }
     }
 
 }

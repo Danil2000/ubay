@@ -18,14 +18,15 @@ public class UserDAO {
             System.out.println("Problem" + throwables);
         }
     }
-    public void create(String login, String password, Integer balance, String userRole) throws SQLException {
+    public Boolean create(String login, String password, Integer balance, String userRole) throws SQLException {
         String query = "INSERT into ubay.user(login, password, balance, role) values(\'" + login + "\',\'" + password + "\'," + balance + ", \'" +userRole + "\');";
         statement = this.conn.createStatement();
         if(checkUser(login) == true) {
-            return;
+            return false;
         }
         else {
             statement.executeUpdate(query);
+            return true;
         }
     }
     public Boolean checkUser(String login) throws SQLException {
