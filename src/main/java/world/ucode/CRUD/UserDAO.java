@@ -13,6 +13,7 @@ public class UserDAO {
         Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
         try {
             this.conn = DriverManager.getConnection(this.url, this.userName, this.bdPassword);
+            statement = this.conn.createStatement();
             System.out.println("Ok");
         } catch (SQLException throwables) {
             System.out.println("Problem" + throwables);
@@ -20,8 +21,7 @@ public class UserDAO {
     }
     public Boolean create(String login, String password, Integer balance, String userRole) throws SQLException {
         String query = "INSERT into ubay.user(login, password, balance, role) values(\'" + login + "\',\'" + password + "\'," + balance + ", \'" +userRole + "\');";
-        statement = this.conn.createStatement();
-        if(checkUser(login) == true) {
+        if(checkUser(login, password) == true) {
             return false;
         }
         else {
@@ -29,19 +29,19 @@ public class UserDAO {
             return true;
         }
     }
-    public Boolean checkUser(String login) throws SQLException {
+
+    public Boolean checkUser(String login, String userPassword) throws SQLException {
         String query = "select * from ubay.user";
         ResultSet res = statement.executeQuery(query);
         while (res.next()) {
             String name = res.getString(2);
-            System.out.println(name);
-            System.out.println(login);
+            String password = res.getString(3);
 
-            if (name.equals(login)) {
+            if (name.equals(login) && userPassword.equals(password)) {
                 System.out.println("User exist");
                 return true;
             }
-            else{
+            else {
                 System.out.println("New user");
             }
         }
