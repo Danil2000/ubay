@@ -19,7 +19,7 @@
           class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
     </bean>
     <mvc:annotation-driven />
-    <mvc:resources mapping="/resources/**" location="/styles/" cache-period="31556926"/>
+    <mvc:resources mapping="/CSS/**" location="/CSS/" cache-period="31556926"/>
     <!--    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
     <!--        <property name="maxUploadSize" value="31457280"/>-->
     <!--    </bean>-->

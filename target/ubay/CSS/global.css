@@ -1,0 +1,55 @@
+.form-signup {
+    padding: 40px;
+    border: blue 2px solid;
+    border-radius: 6px;
+    background-color: #fbfbfb;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-signup {
+    background: #e80d33;
+    position: relative;
+    margin: 20px 0px;
+    padding: 0.65em;
+    float: inherit;
+    width: 100%;
+    color: #eff5f9;
+    border-color: rgba(255, 255, 255, 0.34);
+}
+
+.password-input-style {
+    position: relative;
+    margin: 20px 0px 25px 0px;
+    padding: 0.65em;
+    float: inherit;
+    width: 100%;
+    color: #eff5f9;
+    border-color: rgba(255, 255, 255, 0.34);
+}
+
+.username-input-style {
+    position: relative;
+    margin: 20px 0px 10px;
+    padding: 0.65em;
+    float: inherit;
+    width: 100%;
+    color: #eff5f9;
+    border-color: rgba(255, 255, 255, 0.34);
+}
+
+.role-balance-style {
+    position: relative;
+    margin: 20px 0px 10px;
+    padding: 0.65em;
+    float: inherit;
+    width: 100%;
+    color: #626567;
+    border-color: rgba(255, 255, 255, 0.34);
+}

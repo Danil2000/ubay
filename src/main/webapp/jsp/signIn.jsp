@@ -11,7 +11,7 @@
     <title>Sign in</title>
 </head>
 <body>
-<form class="form-signin form-signin-left" action="/ubay/signIn" method="post">
+<form class="form-signin form-signin-left">
     <input class="form-styling" style="display: none" type="text" name="type" value="signin"/>
     <label for="loginLogin">Username</label>
     <input id="loginLogin" class="form-styling" type="text" name="login" required/>

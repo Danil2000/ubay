@@ -1,6 +1,7 @@
+world/ucode/Controllers/SignIn.class
 world/ucode/Model/UserDto.class
-world/ucode/SignUp.class
-world/ucode/SignIn.class
 world/ucode/CRUD/UserDAO.class
+world/ucode/Hash/HashPassword.class
+world/ucode/Controllers/Start.class
+world/ucode/Controllers/SignUp.class
 world/ucode/Model/NewUserDTO.class
-world/ucode/Start.class

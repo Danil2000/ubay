@@ -1,4 +1,0 @@
-0:0:0:0:0:0:0:1 - - [03/Feb/2021:19:57:34 +0200] "GET /ubay/signIn HTTP/1.1" 200 744 http-bio-8080-exec-1 295
-0:0:0:0:0:0:0:1 - - [03/Feb/2021:19:57:35 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
-0:0:0:0:0:0:0:1 - - [03/Feb/2021:19:57:51 +0200] "POST /ubay/signIn HTTP/1.1" 200 72 http-bio-8080-exec-2 253
-0:0:0:0:0:0:0:1 - - [03/Feb/2021:20:08:46 +0200] "POST /ubay/signIn HTTP/1.1" 200 1315 http-bio-8080-exec-6 64
