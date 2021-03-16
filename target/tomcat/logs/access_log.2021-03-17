@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [17/Mar/2021:00:17:05 +0200] "GET /ubay/signIn?type=signin&login=qwe&password=4545 HTTP/1.1" 200 2639 http-bio-8080-exec-1 517
+0:0:0:0:0:0:0:1 - - [17/Mar/2021:00:17:05 +0200] "GET /ubay/CSS/global.css HTTP/1.1" 200 11295 http-bio-8080-exec-3 8
+0:0:0:0:0:0:0:1 - - [17/Mar/2021:00:17:05 +0200] "GET /ubay/CSS/reset.css HTTP/1.1" 200 2739 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [17/Mar/2021:00:17:08 +0200] "POST /ubay/signIn?type=signin&login=qwe&password=4545 HTTP/1.1" 302 - http-bio-8080-exec-5 224
+0:0:0:0:0:0:0:1 - - [17/Mar/2021:00:17:09 +0200] "GET /ubay/main HTTP/1.1" 200 6446 http-bio-8080-exec-6 226
+0:0:0:0:0:0:0:1 - - [17/Mar/2021:00:17:09 +0200] "GET /ubay/img/img1.jpg HTTP/1.1" 200 230550 http-bio-8080-exec-7 6

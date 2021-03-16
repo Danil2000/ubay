@@ -1,0 +1,11 @@
+world/ucode/Controllers/CreateLot.class
+world/ucode/Model/NewUserDAO.class
+world/ucode/Controllers/MainPage.class
+world/ucode/CRUD/LotCRUD.class
+world/ucode/Controllers/Lot.class
+world/ucode/Controllers/SignIn.class
+world/ucode/Controllers/Start.class
+world/ucode/Model/LotDAO.class
+world/ucode/Model/UserDAO.class
+world/ucode/Controllers/SignUp.class
+world/ucode/CRUD/UserCRUD.class
