@@ -87,38 +87,11 @@
 
             <div class="search">
                 <p>Search:</p>
-                <form>
+                <form  method="POST" action="/ubay/search" enctype="multipart/form-data" name="form">
                     <label for="searchByTitle">Title</label>
                     <input id="searchByTitle" class="form-styling" type="text"
                            name="title"/>
-
-                    <label for="searchByOpenPrice">Opening price</label>
-                    <input id="searchByOpenPrice" class="form-styling"
-                           type="number" min=".01" step=".01"
-                           name="startPrice"/>
-
-                    <label for="searchBySellersRate">Sellers min rate</label>
-                    <input id="searchBySellersRate" class="form-styling"
-                           type="number" min=".01" max="5" step=".01"
-                           name="sellersRate"/>
-
-                    <label for="searchByDuration">Duration</label>
-                    <input id="searchByDuration" class="form-styling"
-                           type="number" min="1" max="7" step="1"
-                           name="duration"/>
-
-                    <label for="searchByStartTime">Start time (day)</label>
-                    <input id="searchByStartTime" class="form-styling" type="date"
-                           name="startTime"/>
-                    <script>
-                        document.getElementById('searchByStartTime').max = new Date().toISOString().split("T")[0];
-                    </script>
-
-                    <label for="searchByDescription">Description</label>
-                    <input id="searchByDescription" class="form-styling" type="text"
-                           name="description"/>
-
-                    <input class="button button_search" type="button" value="Search" onclick="view.submitSearch()">
+                    <input class="button button_search" type="submit" value="Search" >
                 </form>
             </div>
         </aside>

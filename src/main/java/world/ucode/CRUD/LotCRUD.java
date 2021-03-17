@@ -50,5 +50,21 @@ public class LotCRUD {
         }
         return list;
     }
+    public List<LotDAO> search(String title) throws SQLException {
+        String query = "select * from ubay.lots where title = \'" + title + "\'";
+        List<LotDAO> list = new ArrayList<>();
+        ResultSet res = statement.executeQuery(query);
+        while (res.next()) {
+            LotDAO lot = new LotDAO();
+            lot.setTitle(res.getString(2));
+            lot.setStartPrice(res.getDouble(4));
+            lot.setBidStep(res.getDouble(5));
+            lot.setCategory(res.getString(3));
+            lot.setActive(1);
+            lot.setImage(res.getString(6));
+            list.add(lot);
+        }
+        return list;
+    }
 
 }

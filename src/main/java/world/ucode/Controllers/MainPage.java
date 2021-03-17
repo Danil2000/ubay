@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import world.ucode.CRUD.LotCRUD;
 import world.ucode.Model.LotDAO;
+
 @Controller
 public class MainPage {
     @RequestMapping(value = "/main", method = RequestMethod.GET)
@@ -25,7 +26,22 @@ public class MainPage {
         System.out.println(empList);
 		mv.setViewName("mainPage");
 		mv.addObject("empList", empList);
-
 		return mv;
+    }
+    @RequestMapping(value = "/search", method = RequestMethod.POST)
+    public ModelAndView search(String title) throws SQLException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        LotCRUD crud = new LotCRUD();
+        LotDAO lott = new LotDAO();
+        crud.getConnection();
+        List<LotDAO> empList = crud.search(title);
+        ModelAndView mv = new ModelAndView();
+        System.out.println(empList);
+        mv.setViewName("mainPage");
+        mv.addObject("empList", empList);
+        return mv;
+    }
+    @RequestMapping(value = "/auction", method = RequestMethod.GET)
+    public String auction() {
+        return "/auction";
     }
 }

@@ -12,7 +12,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 
 @Controller
-public class SignUp extends HttpServlet {
+public class SignUp {
     @RequestMapping(value = "/signUp", method = RequestMethod.GET)
     public String getPage() {
         return "/signUp";
