@@ -184,7 +184,7 @@ html, body {
     min-height: 95%;
 }
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -381,8 +381,30 @@ aside {
 .container {
     max-width: 1020px;
     margin: 0 -10px;
-    /*border: 1px solid red;*/
 }
+.wrapper {
+    float: left;
+    margin: 10px;
+    text-align: center;
+    width: 320px;
+}
+.auction_image_index {
+    width: 100% !important;
+}
+.auction-card-title {
+    text-decoration: none !important;
+    color: #132440;
+}
+.auction-card-inactive {
+    text-decoration: none !important;
+    color: #132440;
+}
+
+.auction-card-value {
+    text-decoration: none !important;
+    color: #db8170;
+}
+
 .one-third {
     /* flex: 1; */
     float: left;

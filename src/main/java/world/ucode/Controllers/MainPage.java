@@ -40,8 +40,18 @@ public class MainPage {
         mv.addObject("empList", empList);
         return mv;
     }
-    @RequestMapping(value = "/auction", method = RequestMethod.GET)
-    public String auction() {
-        return "/auction";
+    @RequestMapping(value = "/filter", method = RequestMethod.POST)
+    public ModelAndView filter(String category) throws SQLException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        LotCRUD crud = new LotCRUD();
+        LotDAO lott = new LotDAO();
+        System.out.println(category);
+        crud.getConnection();
+        List<LotDAO> empList = crud.filter(category);
+        ModelAndView mv = new ModelAndView();
+        System.out.println(empList);
+        mv.setViewName("mainPage");
+        mv.addObject("empList", empList);
+        return mv;
     }
+
 }

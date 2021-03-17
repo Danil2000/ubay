@@ -26,7 +26,7 @@
         </div>
         <div class="header-menu">
             <ul>
-                <li><a style="color: #ffffff" href="/ubay/">Home</a></li>
+                <li><a style="color: #ffffff" href="/ubay/main">Home</a></li>
                 <li><a style="color: #ffffff" href="#">About Us</a></li>
                 <li><a style="color: #ffffff" href="#">FAQ</a></li>
                 <li><a style="color: #ffffff" href="#">Contacts Us</a></li>

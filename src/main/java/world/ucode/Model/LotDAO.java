@@ -11,6 +11,7 @@ public class LotDAO {
     public String category;
     public Integer active;
     public String image;
+    public String lotId;
 
     public String getImage() {
         return image;
@@ -20,6 +21,13 @@ public class LotDAO {
         this.image = image;
     }
 
+    public String getLotId() {
+        return lotId;
+    }
+
+    public void setLotId(String lotId) {
+        this.lotId = lotId;
+    }
 
     public void setTitle(String title) { this.title = title; }
     public String getTitle() { return title; }

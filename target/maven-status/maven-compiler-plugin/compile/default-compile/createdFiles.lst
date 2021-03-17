@@ -8,4 +8,5 @@ world/ucode/Controllers/Start.class
 world/ucode/Model/LotDAO.class
 world/ucode/Model/UserDAO.class
 world/ucode/Controllers/SignUp.class
+world/ucode/Controllers/Auction.class
 world/ucode/CRUD/UserCRUD.class

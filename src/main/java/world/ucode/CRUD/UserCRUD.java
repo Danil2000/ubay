@@ -37,7 +37,7 @@ public class UserCRUD {
             String name = res.getString(2);
             String password = res.getString(3);
             System.out.println(name + " " + login);
-            if (name.equals(login.split(",")[1]) || password.equals(userPassword)) {
+            if (name.equals(login) || password.equals(userPassword)) {
                 System.out.println("User exist");
                 return true;
             }

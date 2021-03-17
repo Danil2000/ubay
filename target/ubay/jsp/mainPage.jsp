@@ -29,10 +29,10 @@
             </div>
             <div class="header-menu">
                 <ul>
-                    <li><a style="color: #ffffff" href="/ubay/">Home</a></li>
                     <li><a style="color: #ffffff" href="#">About Us</a></li>
                     <li><a style="color: #ffffff" href="#">FAQ</a></li>
                     <li><a style="color: #ffffff" href="#">Contacts Us</a></li>
+                    <li><a style="color: #ffffff" href="/ubay/createLot">Add New Lot</a></li>
                 </ul>
             </div>
             <div id="header-login-first" class="header-login">
@@ -63,64 +63,26 @@
                 </select>
             </div>
 
-            <div>
+            <form  method="POST" action="/ubay/filter" enctype="multipart/form-data" name="form">
                 <p>Category:</p>
-                <label class="filterbox">flowers
-                    <input type="checkbox" class="check-brand" value="flowers">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="filterbox">tools
-                    <input type="checkbox" class="check-brand" value="tools">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="filterbox">pictures
-                    <input type="checkbox" class="check-brand" value="pictures">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="filterbox">others
-                    <input type="checkbox" class="check-brand" value="others">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-
-            <br><br>
+                <select class="sort-select" name="category">
+                    <option value="flowers">flowers</option>
+                    <option value="tools">tools</option>
+                    <option value="pictures">pictures</option>
+                    <option value="others">others</option>
+                </select>
+                <input class="button button_search" type="submit" value="Filter" >
+            </form>
 
             <div class="search">
-                <p>Search:</p>
-                <form>
-                    <label for="searchByTitle">Title</label>
-                    <input id="searchByTitle" class="form-styling" type="text"
-                           name="title"/>
-
-                    <label for="searchByOpenPrice">Opening price</label>
-                    <input id="searchByOpenPrice" class="form-styling"
-                           type="number" min=".01" step=".01"
-                           name="startPrice"/>
-
-                    <label for="searchBySellersRate">Sellers min rate</label>
-                    <input id="searchBySellersRate" class="form-styling"
-                           type="number" min=".01" max="5" step=".01"
-                           name="sellersRate"/>
-
-                    <label for="searchByDuration">Duration</label>
-                    <input id="searchByDuration" class="form-styling"
-                           type="number" min="1" max="7" step="1"
-                           name="duration"/>
-
-                    <label for="searchByStartTime">Start time (day)</label>
-                    <input id="searchByStartTime" class="form-styling" type="date"
-                           name="startTime"/>
-                    <script>
-                        document.getElementById('searchByStartTime').max = new Date().toISOString().split("T")[0];
-                    </script>
-
-                    <label for="searchByDescription">Description</label>
-                    <input id="searchByDescription" class="form-styling" type="text"
-                           name="description"/>
-
-                    <input class="button button_search" type="button" value="Search" onclick="view.submitSearch()">
-                </form>
-            </div>
+            <p>Search:</p>
+            <form  method="POST" action="/ubay/search" enctype="multipart/form-data" name="form">
+                <label for="searchByTitle">Title</label>
+                <input id="searchByTitle" class="form-styling" type="text"
+                       name="title"/>
+                <input class="button button_search" type="submit" value="Search" >
+            </form>
+        </div>
         </aside>
         <%-- End Filters --%>
 
@@ -130,16 +92,18 @@
                 <!-- <c:choose>
                     <c:when test="${lots.active=='1'}"> -->
                     <div class="wrapper">
-                            <a class="auction-card" href="url_lot"}>
-                                <div><img style="width: 150px; height: 100px" class="auction_image_index" src="${lots.image}"></div>
+                            <a class="auction-card" href="${lots.lotId}">
+                                <div><img style="width: 100%;" class="auction_image_index" src="${lots.image}"></div>
                                 <div class="auction-card-title">${lots.title}</div>
                                 <div class="auction-card-inactive">Expired</div>
                                 <div class="auction-card-value">${lots.startPrice}</div>
-                            <!-- </c:when>
-                        </c:choose> -->
-                    </a>
-                </c:forEach>
-            </div>
+                                <!-- </c:when>
+
+                     </c:choose> -->
+                            </a>
+                    </div>
+            </c:forEach>
+
         </div>
     </main>
 </div>
